@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CENA</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <img src="img/logo.png" alt="CENA Logo" class="logo">
+  </header>
+
+  <!-- Menu -->
+  <section class="menu-section">
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+    </ul>
+  </nav>
+</section>
+
+  <section class="relatar">
+    <h2>Relate</h2>
+    <p>No campo abaixo comunique sua insatisfação ou sugestão</p>
+    
+    <form id="relatoForm" class="relatar-form">
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado" required>
+        <option value="">Selecione o Estado</option> 
+      </select>
+
+      <label for="cidade">Cidade:</label>
+      <select id="cidade" name="cidade" required>
+        <option value="">Selecione a Cidade</option>
+      </select>
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" placeholder="Descreva o problema..." required></textarea>
+
+      <button type="submit" class="btn">Enviar Relato</button>
+    </form>
+    
+  <!-- Link para página de relatos -->
+<p><a href="relatos.html" class="btn">Ver Últimos Relatos</a></p>
+  </section>
+
+  <section class="carrossel">
+    <h2>Problemas Recorrentes</h2>
+    <div class="slider">
+      <div class="slide active">
+        <img src="img/trem.jpg" alt="Trem lotado">
+        <div class="caption">Transporte Precário</div>
+      </div>
+      <div class="slide">
+        <img src="img/lixo.avif" alt="Acúmulo de lixo">
+        <div class="caption">Acúmulo de Lixo</div>
+      </div>
+      <div class="slide">
+        <img src="img/iluminação.jpeg" alt="Falta de iluminação">
+        <div class="caption">Falta de Iluminação</div>
+      </div>
+      <div class="slide">
+        <img src="img/alagamento.jpeg" alt="Alagamento">
+        <div class="caption">Alagamentos</div>
+      </div>
+      <div class="slide">
+        <img src="img/buracos.jpg" alt="Buracos nas ruas">
+        <div class="caption">Buracos nas Ruas</div>
+      </div>
+    </div>
+    <div class="controls">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+    <div class="dots"></div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 CENA. Todos os direitos reservados.</p>
+    <p>Desenvolvido para fins acadêmicos.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

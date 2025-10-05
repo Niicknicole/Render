@@ -1,0 +1,109 @@
+/* Menu */
+.menu-section {
+  margin: 40px auto 20px auto;
+  text-align: center;
+}
+
+.menu-section ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.menu-section a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ddd; /* cinza claro */
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.menu-section a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.menu-section a:hover::after,
+.menu-section a.active::after {
+  width: 100%;
+}
+
+/* Container principal dos relatos */
+#relatos-list {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Título da página */
+#relatos-list h1 {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Estilo dos cards de relato */
+.relato.card {
+  background: #1f1f1f;
+  color: #fff;
+  border-radius: 16px;
+  padding: 25px 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efeito hover nos cards */
+.relato.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Local do relato */
+.relato-local {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Descrição do relato */
+.relato-descricao {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #ddd;
+}
+
+/* Data do relato */
+.relato-data {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Botão voltar ou Início */
+#back-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #4b3fff;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+#back-button:hover {
+  background-color: #3a2bcc;
+}

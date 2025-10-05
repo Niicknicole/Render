@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1707079200000,
+    "estado": "SP",
+    "cidade": "São Paulo",
+    "descricao": "Rua alagada após chuva.",
+    "data": "2025-10-05T01:00:00.000Z"
+  },
+  {
+    "id": 1707079260000,
+    "estado": "RJ",
+    "cidade": "Rio de Janeiro",
+    "descricao": "Buraco na calçada.",
+    "data": "2025-10-05T01:01:00.000Z"
+  },
+  {
+    "id": 1759637399300,
+    "estado": "RJ",
+    "cidade": "Nova Iguaçu",
+    "descricao": "muitos tiros",
+    "userEmail": null,
+    "data": "2025-10-05T04:09:59.300Z"
+  }
+]

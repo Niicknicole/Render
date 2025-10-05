@@ -1,0 +1,289 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #111, #333); /* preto para cinza escuro */
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Logo */
+.topbar {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.logo {
+  height: 160px;
+  margin-top: 30px;
+}
+
+/* Menu */
+.menu-section {
+  margin: 40px auto 20px auto;
+  text-align: center;
+}
+
+.menu-section ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.menu-section a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ddd; /* cinza claro */
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.menu-section a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.menu-section a:hover::after,
+.menu-section a.active::after {
+  width: 100%;
+}
+
+/* Seção Relatar */
+.relatar {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+}
+
+.relatar h2 {
+  font-weight: 800;
+  font-size: 3rem;
+  color: #e0e0e0; 
+  margin-bottom: 1rem;
+}
+
+.relatar p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #ccc; 
+}
+
+/* Formulário */
+.relatar-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; 
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.relatar-form label {
+  font-weight: 600;
+  color: #fff;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.relatar-form select {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #222;
+  color: #ddd;
+  font-size: 1rem;
+}
+
+/* Textarea com espaçamento maior */
+.relatar-form textarea {
+  width: 100%;
+  height: 120px;
+  padding: 1rem;
+  margin-top: 2rem; 
+  border-radius: 12px;
+  border: 1px solid #555;
+  resize: none;
+  font-size: 1rem;
+  background: #222;
+  color: #fff;
+}
+
+/* Botão */
+.btn {
+  padding: 0.9rem 1.7rem;
+  background: linear-gradient(90deg, #444, #888); /* prata escuro → cinza */
+  color: #fff;
+  font-weight: bold;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #666, #aaa); /* clareia ao hover */
+  transform: scale(1.05);
+}
+
+
+/* Carrossel */
+.carrossel {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.carrossel h2 {
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: #e0e0e0;
+  margin-bottom: 1.5rem;
+}
+
+/* Slider container */
+.slider {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Slides */
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slide.active {
+  display: block;
+  animation: fade 1s;
+}
+
+.slide img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Texto sobreposto */
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+/* Botões laterais */
+.controls {
+  position: relative;
+  top: -200px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.controls span {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+  user-select: none;
+  transition: color 0.3s;
+}
+
+.controls span:hover {
+  color: #bbb;
+}
+/* Botão de ver relatos abaixo do formulário */
+.relatar-form + p {
+  margin-top: 20px;   
+  text-align: center; 
+}
+
+.relatar-form + p .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 30px;
+  background-color: #007bff; 
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.relatar-form + p .btn:hover {
+  background-color: #0056b3; 
+}
+
+
+/* Bolinhas de navegação */
+.dots {
+  margin-top: 15px;
+}
+
+.dots span {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #777;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dots span.active {
+  background: #fff;
+}
+
+/* Efeito */
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+ 
+
+/* Footer */
+.footer {
+  margin-top: 4rem;
+  padding: 1.5rem 1rem;
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+}
+
+.footer p + p {
+  margin-top: 0.3rem;
+}
+
